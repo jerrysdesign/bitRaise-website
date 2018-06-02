@@ -28,23 +28,35 @@
            span
             | ICO services.
         .col-md-4.col-sm-6.service.text-center.bottom_60
-          i.icon-desktop
+          i.icon-services--01
           h3.title.top_15 ICO Concept building and Ideation
         .col-md-4.col-sm-6.service.text-center.bottom_60
-          i.icon-tools
+          i.icon-services--02
           h3.title.top_15 ICO White Paper
         .col-md-4.col-sm-6.service.text-center.bottom_60
-          i.icon-paintbrush
+          i.icon-services--03
           h3.title.top_15 Token Developement
-        .col-md-4.col-sm-6.service.text-center
-          i.icon-phone
+        .col-md-4.col-sm-6.service.text-center.bottom_60
+          i.icon-services--04
           h3.title.top_15 ICO Website
-        .col-md-4.col-sm-6.service.text-center
-          i.icon-camera
+        .col-md-4.col-sm-6.service.text-center.bottom_60
+          i.icon-services--05
           h3.title.top_15 Business Image Developement
-        .col-md-4.col-sm-6.service.text-center
-          i.icon-lightbulb
+        .col-md-4.col-sm-6.service.text-center.bottom_60
+          i.icon-services--06
           h3.title.top_15 ICO Marketing
+        .col-md-4.col-sm-6.service.text-center.bottom_60
+          i.icon-services--07
+          h3.title.top_15 Additional Services
+        .col-md-4.col-sm-6.service.text-center.bottom_60
+          i.icon-services--08
+          h3.title.top_15 ICO Legal
+        .col-md-4.col-sm-6.service.text-center.bottom_60
+          i.icon-services--09
+          h3.title.top_15 ICO Financial
+        .col-md-4.col-sm-6.service.text-center.bottom_60
+          i.icon-services--10
+          h3.title.top_15 Post ICO Services
 </template>
 
 <script>
@@ -191,6 +203,53 @@ $url_0: url(../assets/img/home-bg.jpg);
       color: #ffffff63;
       margin-bottom: 0;
     }
+    @media (max-width: 1024px){
+      padding: 0 30px;
+    }
+    @media (max-width: 481px) {
+      margin-bottom: 45px;
+      padding: 0;
+    }
   }
+}
+[class^='icon-services--'] {
+  display: inline-block;
+  width: 72px;
+  height: 72px;
+}
+// @each $name in 01, 02, 03, 04, 05, 06, 07, 08, 09, 10 {
+//   .icon-services--#{$name} {
+//     background-image: url(../assets/img/icon-services--#{$name}.svg);
+//   }
+// }
+.icon-services--01 {
+  background-image: url(../assets/img/icon-services--01.svg);
+}
+.icon-services--02 {
+  background-image: url(../assets/img/icon-services--02.svg);
+}
+.icon-services--03 {
+  background-image: url(../assets/img/icon-services--03.svg);
+}
+.icon-services--04 {
+  background-image: url(../assets/img/icon-services--04.svg);
+}
+.icon-services--05 {
+  background-image: url(../assets/img/icon-services--05.svg);
+}
+.icon-services--06 {
+  background-image: url(../assets/img/icon-services--06.svg);
+}
+.icon-services--07 {
+  background-image: url(../assets/img/icon-services--07.svg);
+}
+.icon-services--08 {
+  background-image: url(../assets/img/icon-services--08.svg);
+}
+.icon-services--09 {
+  background-image: url(../assets/img/icon-services--09.svg);
+}
+.icon-services--10 {
+  background-image: url(../assets/img/icon-services--10.svg);
 }
 </style>

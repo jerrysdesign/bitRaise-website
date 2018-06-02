@@ -8,7 +8,7 @@
           br
           | Feel free to contact us.
       .col-md-12.top_60.wow.fadeInUp(data-wow-delay='0.3s')
-        form.col-md-8.offset-md-2.contact-form(method='POST', action='mail.php')
+        form.col-md-8.offset-md-2.contact-form(method='POST', action='')
           .row
             // Name
             .col-md-6
@@ -43,6 +43,9 @@ $font_1: sans-serif;
 
 .contact {
   padding: 120px 0 60px;
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
 }
 .form-inp {
   width: 100%;
@@ -56,7 +59,7 @@ $font_1: sans-serif;
   background: none;
   &:focus {
     outline: 0;
-    border-bottom: solid 1px #dfdfdf91;
+    border-bottom: solid 1px #dfdfdf;
   }
 }
 .contact-form {
@@ -73,7 +76,7 @@ $font_1: sans-serif;
     background: none;
     &:focus {
       outline: 0;
-      border-bottom: solid 1px #dfdfdf91;
+      border-bottom: solid 1px #dfdfdf;
     }
   }
   .site-btn {

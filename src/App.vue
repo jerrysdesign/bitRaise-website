@@ -52,6 +52,9 @@ export default {
     width: 100%;
     height: 12px;
     top: 0;
+    @media (max-width: 481px) {
+      height: 8px;
+    }
   }
   &--right {
     @extend %site-line-stye;
@@ -59,12 +62,18 @@ export default {
     height: 100%;
     right: 0;
     top:0;
+    @media (max-width: 481px) {
+      width: 8px;
+    }
   }
   &--bottom {
     @extend %site-line-stye;
     width: 100%;
     height: 12px;
     bottom:0;
+    @media (max-width: 481px) {
+      height: 8px;
+    }
   }
 
   &--left {
@@ -73,6 +82,9 @@ export default {
     height: 100%;
     left: 0;
     top:0;
+    @media (max-width: 481px) {
+      width: 8px;
+    }
   }
 }
 
@@ -85,6 +97,9 @@ header{
   width: 100%;
   z-index: 11;
   transition: all ease 0.3s 1.0s;
+  @media (max-width: 768px) {
+    background: #000829;
+  }
 }
 .nav-icon {
   float: right;
@@ -110,7 +125,7 @@ header{
       top: 7px;
       transform-origin: left center;
     }
-    &::nth-child(3) {
+    &:nth-child(3) {
       top: 14px;
       transform-origin: left center;
       width: 60%;

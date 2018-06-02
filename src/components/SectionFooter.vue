@@ -23,7 +23,7 @@
             | +886-2-27528787
       .copyright
         p.float-left Copyright 2018 All rights reserved.
-        img.float-right(src='@/assets/img/logo.svg', alt='')
+        img.float-right(src='@/assets/img/logo-br.svg', alt='')
 </template>
 
 <script>
@@ -66,6 +66,11 @@ footer {
     border-top: 1px solid #fff;
     padding-top: 30px;
     margin-top: 30px;
+    @media (max-width: 481px) {
+      img.float-right {
+        display: none;
+      }
+    }
   }
   .footer-top .need-us .title {
     font-size: 35px;
@@ -73,6 +78,9 @@ footer {
     font-weight: 600;
     span {
       color: $color_sunglo_approx;
+    }
+    @media (max-width: 481px) {
+      font-size: 25px;
     }
   }
   .information .title {

@@ -71,6 +71,11 @@ export default {
       }
     }
   }
+  @media (max-width: 1024px){ {
+    background-size: cover;
+    background-attachment: scroll !important;
+    overflow: hidden;
+  }
 }
 
 #particles-js {
