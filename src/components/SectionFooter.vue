@@ -39,7 +39,7 @@ export default {
 
 <style lang="scss" scoped>
 // colors
-$black_75: rgba(0, 0, 0, 0.75);
+$bg-cover: rgba(#00030A, .85);
 $white: #fff;
 $color_sunglo_approx: #ff6600;
 
@@ -57,7 +57,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: $black_75;
+    background-color: $bg-cover;
   }
   .cont {
     position: relative;
