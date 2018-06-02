@@ -13,14 +13,16 @@
         span
         span
     .wrapper
+      About
     SectionFooter
 </template>
 
 <script>
+import About from '@/components/About'
 import SectionFooter from '@/components/SectionFooter'
 export default {
   name: 'App',
-  components: {SectionFooter }
+  components: {About, SectionFooter }
 }
 </script>
 
