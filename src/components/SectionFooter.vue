@@ -49,7 +49,7 @@ $url_0: url(../assets/img/home-bg.jpg);
 footer {
   background: $url_0 bottom center fixed;
   position: relative;
-  padding: 60px 0;
+  padding: 60px 0 30px;
   &:before {
     content: "";
     position: absolute;
@@ -63,9 +63,10 @@ footer {
     position: relative;
   }
   .copyright {
-    border-top: 1px solid #fff;
+    border-top: 1px solid rgba(#8C99B8,.35);
     padding-top: 30px;
     margin-top: 30px;
+    overflow: hidden;
     @media (max-width: 481px) {
       img.float-right {
         display: none;

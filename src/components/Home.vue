@@ -2,11 +2,11 @@
   // HOME SECTION
   section#home
     .home
-      #block(style='width: 100%; height: 100%; position: absolute;', data-vide-options='position: 0% 50%')
+      #block(style='width: 100%; height: 100%; position: absolute;')
       .home-content
         .cont
           h1.promo-text.text-center
-            span.element(data-text1='web design', data-text2='branding', data-text3='logo', data-loop='true', data-backdelay='1500') {{ msg }}
+            span.element {{ msg }}
             br
           a.site-btn.top_45(href='#about') Let&rsquo;s go!
 </template>
@@ -26,6 +26,7 @@ export default {
 // Home
 #home{
   position: relative;
+  height: 100vh;
 }
 
 .home {
@@ -71,7 +72,7 @@ export default {
       }
     }
   }
-  @media (max-width: 1024px){ {
+  @media (max-width: 1024px){
     background-size: cover;
     background-attachment: scroll !important;
     overflow: hidden;

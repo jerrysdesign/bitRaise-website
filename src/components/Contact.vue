@@ -35,7 +35,7 @@ export default {
 
 <style lang="scss" scoped>
 //colors
-$white_35: rgba(255, 255, 255, 0.35);
+$white_35: rgba(#8C99B8,.35);
 
 //fonts
 $font_0: Poppins;
@@ -57,9 +57,13 @@ $font_1: sans-serif;
   margin-bottom: 15px;
   font-family: $font_0, $font_1;
   background: none;
+  color: #D7DDED;
   &:focus {
     outline: 0;
-    border-bottom: solid 1px #dfdfdf;
+    border-bottom: solid 1px #D7DDED;
+  }
+  &::placeholder {
+    color: rgba(#8C99B8,.5);
   }
 }
 .contact-form {
@@ -70,13 +74,16 @@ $font_1: sans-serif;
     font-size: 13px;
     padding: 20px 0 0 10px;
     height: 119px;
-    color: #dfdfdf91;
+    color: #D7DDED;
     margin-bottom: 15px;
     font-family: $font_0, $font_1;
     background: none;
     &:focus {
       outline: 0;
-      border-bottom: solid 1px #dfdfdf;
+      border-bottom: solid 1px #D7DDED;
+    }
+    &::placeholder {
+      color: rgba(#8C99B8,.5);
     }
   }
   .site-btn {
