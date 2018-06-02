@@ -1,13 +1,13 @@
 <template lang="pug">
-  section#contact.contact
+  section#contact.contact(v-scroll-reveal.reset={ delay: 250 })
     .cont
-      .col-md-12.text-center.wow.fadeInUp
+      .col-md-12.text-center(v-scroll-reveal.reset={ delay: 250 })
         h2.section-title.bottom_15 Let&apos;s Talk
         p
           | We are always looking for new exciting projects and collaborations.
           br
           | Feel free to contact us.
-      .col-md-12.top_60.wow.fadeInUp(data-wow-delay='0.3s')
+      .col-md-12.top_60(v-scroll-reveal.reset={ delay: 350 })
         form.col-md-8.offset-md-2.contact-form(method='POST', action='')
           .row
             // Name
@@ -43,6 +43,7 @@ $font_1: sans-serif;
 
 .contact {
   padding: 120px 0 60px;
+  background: #000829;
   @media (max-width: 768px) {
     padding: 60px 0;
   }

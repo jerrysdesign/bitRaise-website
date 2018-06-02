@@ -20,7 +20,7 @@
         .col-md-3.col-sm-6.information
           h4.title.bottom_15 Phone
           p
-            | +886-2-27528787
+            | +886-919-990-188(顧問諮詢代表)
       .copyright
         p.float-left Copyright 2018 All rights reserved.
         img.float-right(src='@/assets/img/logo-br.svg', alt='')

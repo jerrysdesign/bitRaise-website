@@ -1,9 +1,9 @@
 <template lang="pug">
   // About
-  section#about.about.padding_30
+  section#about.about
     .cont
       .row
-        .col-md-4
+        .col-md-4(v-scroll-reveal.reset={ delay: 250 })
           h2.section-title.bottom_15
             | Who we are?
             br
@@ -11,50 +11,50 @@
           p 比特幣已經是一種大眾所熟知的數位貨幣，而比特幣背後的區塊鏈技術，勢必對人類帶來深厚的影響。超越貨幣的通證經濟及智能合約的區塊鏈應用，將繼超級電腦、個人電腦、網際網路和行動、社交網路之後的第五個破壞性創新科技。
           p 我們認為區塊鏈本質是一本可以登記、註冊、轉移所有資產的公共帳本，具有在全球範圍內以去中心模式記錄資產的潛力，然而這些資產不僅是金融商品，也包含票選，軟體，健康數據，思想創意等，各式各樣的無形資產，與生態圈。
 
-        .col-md-4
+        .col-md-4(v-scroll-reveal.reset={ delay: 350 })
           p 現今大眾對於區塊鏈技術仍停留在經濟層面，但其應用可以延伸到政治、公益、社會科學和科學領域，而且區塊鏈技術已備某些團體拿來解決現實世界的問題。
           p 除了全球公共利益必須超越單一政府的情況之外，其他行業和社會階級，可以透過區塊鏈科技，擺脫受既得利益團體影響之下的不公平管制規約，而實現新的去中心化商業模式，尤其是有想法但沒錢實踐或量產的團隊，所以將願景透過通證，向群眾募資，並成承諾與實現。
           p 對於成熟的企業而言，除了為其計畫擴展集資之外，更重要的是企業在數位貨幣和區塊鏈的時代佔據先機。引導越來越多的企業加入去中心化的業務和系統，向更加開放的功能，更為強大的基於區塊鏈的模式轉變。
-        .col-md-4
+        .col-md-4(v-scroll-reveal.reset={ delay: 450 })
           p 我們期望可以與更多，相信區塊鏈技術的團隊合作，一同革命，透過ICO的方式，將區塊鏈技術加速普及與實現。
           p 我們認為關鍵在於組建合適的團隊，因此我們擁有業界一流的區塊鏈開發，ICO諮詢、法律知識、市場行銷及業務管理方面的頂尖人才。
     // Service
     .services.padding_90.top_60
       .cont.row
-        .col-md-12.text-center.wow.fadeInUp
-          h2.section-title.bottom_60
+        .col-md-12.text-center
+          h2.section-title.bottom_60(v-scroll-reveal.reset={ delay: 250 })
            | Full
            br
            span
             | ICO services.
-        .col-md-4.col-sm-6.service.text-center.bottom_60
+        .col-md-4.col-sm-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 250 })
           i.icon-services--01
           h3.title.top_15 ICO Concept building and Ideation
-        .col-md-4.col-sm-6.service.text-center.bottom_60
+        .col-md-4.col-sm-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 300 })
           i.icon-services--02
           h3.title.top_15 ICO White Paper
-        .col-md-4.col-sm-6.service.text-center.bottom_60
+        .col-md-4.col-sm-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 350 })
           i.icon-services--03
           h3.title.top_15 Token Developement
-        .col-md-4.col-sm-6.service.text-center.bottom_60
+        .col-md-4.col-sm-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 250 })
           i.icon-services--04
           h3.title.top_15 ICO Website
-        .col-md-4.col-sm-6.service.text-center.bottom_60
+        .col-md-4.col-sm-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 300 })
           i.icon-services--05
           h3.title.top_15 Business Image Developement
-        .col-md-4.col-sm-6.service.text-center.bottom_60
+        .col-md-4.col-sm-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 350 })
           i.icon-services--06
           h3.title.top_15 ICO Marketing
-        .col-md-4.col-sm-6.service.text-center.bottom_60
+        .col-md-4.col-sm-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 250 })
           i.icon-services--07
           h3.title.top_15 Additional Services
-        .col-md-4.col-sm-6.service.text-center.bottom_60
+        .col-md-4.col-sm-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 300 })
           i.icon-services--08
           h3.title.top_15 ICO Legal
-        .col-md-4.col-sm-6.service.text-center.bottom_60
+        .col-md-4.col-sm-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 350 })
           i.icon-services--09
           h3.title.top_15 ICO Financial
-        .col-md-4.col-sm-6.service.text-center.bottom_60
+        .col-md-4.col-sm-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 250 })
           i.icon-services--10
           h3.title.top_15 Post ICO Services
 </template>
@@ -65,6 +65,8 @@ export default {
   data () {
     return {
     }
+  },
+  mounted() {
   }
 }
 </script>
@@ -85,6 +87,7 @@ $url_0: url(../assets/img/home-bg.jpg);
 
 .about {
   padding-top: 75px;
+  background: #000829;
 }
 .titlebar {
   padding: 94px 0;

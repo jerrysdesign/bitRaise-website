@@ -4,7 +4,7 @@
     .home
       #block(style='width: 100%; height: 100%; position: absolute;')
       .home-content
-        .cont
+        .cont(v-scroll-reveal.reset={ delay: 250 })
           h1.promo-text.text-center
             span.element {{ msg }}
             br
