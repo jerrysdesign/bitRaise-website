@@ -22,6 +22,32 @@ ul {
   width: 70%;
   margin-left: 15%;
 }
+.section-title {
+  font-size: 35px;
+  color: #fff;
+  font-weight: 600;
+  span{
+    color: #ff6600;
+  }
+}
+.site-btn{
+  background: #ff6600;
+  border: none;
+  color: #fff !important;
+  display: inline-block;
+  padding:12px 50px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  &:hover {
+    background: #FF4400;
+    padding: 12px 60px;
+    transition: all ease 0.3s;
+  }
+}
+
 // Margins
 .top_15 {
   margin-top: 15px;

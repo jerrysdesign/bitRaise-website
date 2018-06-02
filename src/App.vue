@@ -13,18 +13,20 @@
         span
         span
     .wrapper
-      Home
+      //- Home
       About
+      Contact
     SectionFooter
 </template>
 
 <script>
-import Home from '@/components/Home'
+// import Home from '@/components/Home'
 import About from '@/components/About'
+import Contact from '@/components/Contact'
 import SectionFooter from '@/components/SectionFooter'
 export default {
   name: 'App',
-  components: {Home, About, SectionFooter }
+  components: {About, Contact, SectionFooter }
 }
 </script>
 
