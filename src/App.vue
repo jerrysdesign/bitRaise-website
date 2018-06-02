@@ -12,12 +12,15 @@
         span
         span
         span
-    router-view
+    .wrapper
+    SectionFooter
 </template>
 
 <script>
+import SectionFooter from '@/components/SectionFooter'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {SectionFooter }
 }
 </script>
 
@@ -35,7 +38,7 @@ export default {
 %site-line-stye {
   position: fixed;
   z-index: 999;
-  background: #e36969;
+  background: #FF6600;
 }
 .site-line {
   &--top {
