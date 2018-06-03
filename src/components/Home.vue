@@ -1,111 +1,133 @@
 <template lang="pug">
-  // HOME SECTION
-  section#home
-    .home
-      #block(style='width: 100%; height: 100%; position: absolute;')
-      .home-content
-        .cont(v-scroll-reveal.reset={ delay: 250 })
-          h1.promo-text.text-center
-            span.element {{ msg }}
-            br
-          a.site-btn.top_45(href='#about') Let&rsquo;s go!
+  #Home
+    .site-line--top
+    .site-line--left
+    .site-line--right
+    .site-line--bottom
+    // HEADER
+    header
+      img(src='@/assets/img/logo.svg', alt='logo')
+      //- .nav-icon
+      //-   span
+      //-   span
+      //-   span
+    .wrapper
+      Home
+      About
+      Services
+      Contact
+    SectionFooter
 </template>
 
 <script>
+import Home from '@/components/BlockHero'
+import About from '@/components/BlockAbout'
+import Services from '@/components/BlockServices'
+import Contact from '@/components/BlockContact'
+import SectionFooter from '@/components/BlockFooter'
 export default {
-  name: 'Home',
-  data () {
-    return {
-      msg: 'Welcome to bitRaise'
-    }
-  }
+  name: 'App',
+  components: {Home, About, Services, Contact, SectionFooter}
 }
 </script>
 
 <style lang="scss" scoped>
-// Home
-#home{
-  position: relative;
-  height: 100vh;
-}
 
-.home {
-  display: table;
-  width: 100%;
-  background: url(../assets/img/home-bg.jpg) bottom center fixed;
-  background-size: cover;
+%site-line-stye {
   position: fixed;
-  top: 0;
-  height: 100%;
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+  z-index: 999;
+  background: #FF6600;
+}
+.site-line {
+  &--top {
+    @extend %site-line-stye;
     width: 100%;
+    height: 12px;
+    top: 0;
+    @media (max-width: 481px) {
+      height: 8px;
+    }
+  }
+  &--right {
+    @extend %site-line-stye;
+    width: 12px;
     height: 100%;
-    background-color: rgba(4, 17, 74, 0.75);
-    z-index: 0;
-  }
-  .home-content {
-    position: relative;
-    display: table-cell;
-    vertical-align: middle;
-    .site-btn {
-      z-index: 6;
-      position: relative;
-      margin-left: auto;
-      margin-right: auto;
-      display: table;
-      transition: all ease 0.3s;
-      text-align: center;
-    }
-    .promo-text{
-      color: #fff;
-      font-size: 70px;
-      font-weight: bold;
-      letter-spacing: -2px;
-      position: relative;
-      z-index: 4;
-      .element {
-        color: #ff6600;
-      }
+    right: 0;
+    top:0;
+    @media (max-width: 481px) {
+      width: 8px;
     }
   }
-  @media (max-width: 1024px){
-    background-size: cover;
-    background-attachment: scroll !important;
-    overflow: hidden;
+  &--bottom {
+    @extend %site-line-stye;
+    width: 100%;
+    height: 12px;
+    bottom:0;
+    @media (max-width: 481px) {
+      height: 8px;
+    }
+  }
+
+  &--left {
+    @extend %site-line-stye;
+    width: 12px;
+    height: 100%;
+    left: 0;
+    top:0;
+    @media (max-width: 481px) {
+      width: 8px;
+    }
   }
 }
 
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
+// Header Section
+header{
+  position: fixed;
+  z-index: 3;
+  padding: 30px;
   top: 0;
-  left: 0;
-  z-index: 6;
-}
-.rev_slider .slotholder:after {
   width: 100%;
-  height: 100%;
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  pointer-events: none;
-  /* black overlay with 50% transparency */
-  background: rgba(0, 8, 41, 0.68);
+  z-index: 11;
+  transition: all ease 0.3s 1.0s;
+  @media (max-width: 768px) {
+    background: #000829;
+  }
 }
-.rev-title{
-  color: #fff;
-  font-weight: bold;
-  letter-spacing: -1px;
-  line-height: 56px;
+.nav-icon {
+  float: right;
+  width: 30px;
+  height: 18px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    opacity: 1;
+    transition: .25s ease-in-out;
+    &:nth-child(1) {
+      top: 0px;
+      transform-origin: left center;
+    }
+    &:nth-child(2) {
+      top: 7px;
+      transform-origin: left center;
+    }
+    &:nth-child(3) {
+      top: 14px;
+      transform-origin: left center;
+      width: 60%;
+      right: 0 !important;
+    }
+  }
+  &:hover {
+    span:nth-child(3){
+      width: 100%;
+    }
+  }
 }
-.rev-text{
-  color: #fff;
-}
-
 </style>

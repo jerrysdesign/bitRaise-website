@@ -1,5 +1,5 @@
 <template lang="pug">
-  section#contact.contact(v-scroll-reveal.reset={ delay: 250 })
+  section#contact.contact
     .cont
       .col-md-12.text-center(v-scroll-reveal.reset={ delay: 250 })
         h2.section-title.bottom_15 Let&apos;s Talk
@@ -12,14 +12,14 @@
           .row
             // Name
             .col-md-6
-              input#con_name.form-inp.requie(name='con_name', type='text', placeholder='Name')
+              input#con_name.form-inp.requie(name='con_name', type='text', placeholder='Name', disabled)
             // Email
             .col-md-6
-              input#con_email.form-inp.requie(name='con_email', type='text', placeholder='Email')
+              input#con_email.form-inp.requie(name='con_email', type='text', placeholder='Email', disabled)
             .col-md-12
               // Message
-              textarea#con_message.requie(name='con_message', placeholder='How can we help you?', rows='8')
-              button#con_submit.site-btn.top_45.text-center(type='submit') Submit
+              textarea#con_message.requie(name='con_message', placeholder='How can we help you?', rows='8', disabled)
+              button#con_submit.site-btn.top_45.text-center(type='submit', disabled) 即將開放
 </template>
 
 <script>
@@ -43,9 +43,13 @@ $font_1: sans-serif;
 
 .contact {
   padding: 120px 0 60px;
-  background: #000829;
+  background: rgba(#000829, .95);
+  position: relative;
   @media (max-width: 768px) {
     padding: 60px 0;
+  }
+  p {
+    text-align: center;
   }
 }
 .form-inp {

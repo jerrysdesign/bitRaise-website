@@ -1,13 +1,25 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Home from '@/components/Home'
+import Services from '@/components/Services'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '*',
+      redirect: '/home'
+    },
+    {
+      path: '/home',
       name: 'Home',
+      component: Home
+    },
+    {
+      path: '/services',
+      name: 'Services',
+      component: Services
     }
   ]
 })
