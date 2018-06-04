@@ -26,22 +26,25 @@ export default {
   },
   mounted(){
     window.addEventListener('scroll', this.getScrollTop, true)
-    window.addEventListener('touchmove', this.getScrollTop, true)
     this.setDefault()
     $( window ).resize(this.setDefault)
     var where =  window.pageYOffset || document.documentElement.scrollTop
   },
   methods: {
+    getTest(){
+      alert("gg")
+    },
     setDefault() {
       this.appHeight = document.getElementsByClassName('hero')[0].clientHeight
       this.getScrollTop()
       this.setOpacitySet()
     },
     getScrollTop() {
-      this.currentScroll = document.documentElement.scrollTop
+      this.currentScroll = document.body.scrollTop || document.documentElement.scrollTop
     },
     setOpacitySet(){
       this.opacitySet = `${(1 - this.currentScroll/(this.appHeight / 20) / 15)}`
+      console.log(this.opacitySet)
     }
   },
   watch: {
