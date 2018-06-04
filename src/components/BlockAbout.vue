@@ -46,9 +46,24 @@ $font_0: Font Awesome 5 Free;
 //urls
 $url_0: url(../assets/img/home-bg.jpg);
 
+$navigation_height_xl: 104px;
+$navigation_height_sm: 84px;
+
 .about {
-  padding: 0 0 80px;
   position: relative;
+  padding: 0 0 100px;
+  padding-top: $navigation_height_xl;
+  @media (max-width: 768px) {
+    padding-top: $navigation_height_sm;
+  }
+  @media (max-width: 768px) {
+    padding: 0 0 80px;
+    padding-top: $navigation_height_sm;
+  }
+  @media (max-width: 481px) {
+    padding: 0 0 60px;
+    padding-top: $navigation_height_sm;
+  }
 }
 .titlebar {
   padding: 94px 0;

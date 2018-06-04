@@ -8,48 +8,48 @@
          br
          span
           | ICO services.
-      .col-md-4.col-sm-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 200 })
+      .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 200 })
         router-link(to='/services')
           i.icon-services--01
           h3.title.top_15 ICO Concept building and Ideation
-      .col-md-4.col-sm-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 250 })
+      .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 250 })
         router-link(to='/services')
           i.icon-services--02
           h3.title.top_15 ICO White Paper
-      .col-md-4.col-sm-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 300 })
+      .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 300 })
         router-link(to='/services')
           i.icon-services--03
           h3.title.top_15 Token Developement
-      .col-md-4.col-sm-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 200 })
+      .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 200 })
         router-link(to='/services')
           i.icon-services--04
           h3.title.top_15 ICO Website
-      .col-md-4.col-sm-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 250 })
+      .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 250 })
         router-link(to='/services')
           i.icon-services--05
           h3.title.top_15 Business Image Developement
-      .col-md-4.col-sm-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 300 })
+      .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 300 })
         router-link(to='/services')
           i.icon-services--06
           h3.title.top_15 ICO Marketing
-      .col-md-4.col-sm-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 200 })
+      .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 200 })
         router-link(to='/services')
           i.icon-services--07
           h3.title.top_15 Additional Services
-      .col-md-4.col-sm-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 250 })
+      .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 250 })
         router-link(to='/services')
           i.icon-services--08
           h3.title.top_15 ICO Legal
-      .col-md-4.col-sm-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 300 })
+      .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 300 })
         router-link(to='/services')
           i.icon-services--09
           h3.title.top_15 ICO Financial
-      .col-md-4.col-sm-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 200 })
+      .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 200 })
         router-link(to='/services')
           i.icon-services--10
           h3.title.top_15 Post ICO Services
-      .col-md-4.col-sm-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 250 })
-        router-link.site-btn.top_45(to='/services') See more
+      .w-100.service.text-center(v-scroll-reveal.reset={ delay: 250 })
+        router-link.site-btn(to='/services') See more
 </template>
 
 <script>
@@ -82,7 +82,13 @@ $url_0: url(../assets/img/home-bg.jpg);
   position: relative;
   overflow: hidden;
   background: $url_0 bottom center fixed;
-  padding: 120px 0;
+  padding: 100px 0;
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+  @media (max-width: 481px) {
+    padding: 60px 0;
+  }
   &:before {
     content: "";
     position: absolute;
@@ -93,7 +99,7 @@ $url_0: url(../assets/img/home-bg.jpg);
     background-color: $black_70;
   }
   .service {
-    padding: 0 68px;
+    // padding: 0 68px;
     i {
       color: $color_sunglo_approx;
       font-size: 40px;
@@ -109,11 +115,14 @@ $url_0: url(../assets/img/home-bg.jpg);
       margin-bottom: 0;
     }
     @media (max-width: 1024px){
-      padding: 0 30px;
+      // padding: 0 30px;
     }
     @media (max-width: 481px) {
       margin-bottom: 45px;
       padding: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
@@ -156,5 +165,8 @@ $url_0: url(../assets/img/home-bg.jpg);
 }
 .icon-services--10 {
   background-image: url(../assets/img/icon-services--10.svg);
+}
+.site-btn {
+
 }
 </style>

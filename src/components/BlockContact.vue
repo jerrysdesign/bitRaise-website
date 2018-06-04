@@ -42,10 +42,13 @@ $font_0: Poppins;
 $font_1: sans-serif;
 
 .contact {
-  padding: 120px 0 60px;
+  padding: 100px 0;
   background: rgba(#000829, .95);
   position: relative;
   @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+  @media (max-width: 481px) {
     padding: 60px 0;
   }
   p {

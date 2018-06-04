@@ -32,7 +32,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 %site-line-stye {
   position: fixed;
   z-index: 999;

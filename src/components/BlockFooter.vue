@@ -50,6 +50,12 @@ footer {
   background: $url_0 bottom center fixed;
   position: relative;
   padding: 60px 0 30px;
+  @media (max-width: 768px) {
+    padding: 40px 0 30px;
+  }
+  @media (max-width: 481px) {
+    padding: 30px 0;
+  }
   &:before {
     content: "";
     position: absolute;
