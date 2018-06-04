@@ -26,6 +26,7 @@ export default {
   },
   mounted(){
     window.addEventListener('scroll', this.getScrollTop, true)
+    window.addEventListener('touchmove', this.getScrollTop, true)
     this.setDefault()
     $( window ).resize(this.setDefault)
     var where =  window.pageYOffset || document.documentElement.scrollTop
