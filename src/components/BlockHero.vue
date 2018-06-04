@@ -1,11 +1,10 @@
 <template lang="pug">
   // HOME SECTION
-  section#home
-    .home(:style='opacitySet')
+  section#hero
+    .hero(:style="{ 'opacity': opacitySet }")
       #block(style='width: 100%; height: 100%; position: absolute;')
-      .home-content
+      .hero-content
         .cont
-          //(v-scroll-reveal.reset={ delay: 250 })
           h1.promo-text.text-center
             span.element {{ msg }}
             br
@@ -16,23 +15,24 @@
 import $ from 'jQuery';
 
 export default {
-  name: 'Home',
+  name: 'Hero',
   data () {
     return {
       msg: 'Welcome to bitRaise',
       appHeight: 0,
       currentScroll: 0,
-      opacitySet: 'opacity: 100',
+      opacitySet: '1',
     }
   },
   mounted(){
     window.addEventListener('scroll', this.getScrollTop, true)
     this.setDefault()
     $( window ).resize(this.setDefault)
+    var where =  window.pageYOffset || document.documentElement.scrollTop
   },
   methods: {
     setDefault() {
-      this.appHeight = document.getElementsByClassName("home")[0].clientHeight
+      this.appHeight = document.getElementsByClassName('hero')[0].clientHeight
       this.getScrollTop()
       this.setOpacitySet()
     },
@@ -40,7 +40,7 @@ export default {
       this.currentScroll = document.documentElement.scrollTop
     },
     setOpacitySet(){
-      this.opacitySet = `opacity: ${100 - this.currentScroll/(this.appHeight / 100)}`
+      this.opacitySet = `${(1 - this.currentScroll/(this.appHeight / 20) / 15)}`
     }
   },
   watch: {
@@ -53,12 +53,12 @@ export default {
 
 <style lang="scss" scoped>
 // Home
-#home{
+#hero {
   position: relative;
   height: 100vh;
 }
 
-.home {
+.hero {
   display: table;
   width: 100%;
   background: url(../assets/img/home-bg.jpg) bottom center fixed;
@@ -76,7 +76,7 @@ export default {
     background-color: rgba(4, 17, 74, 0.75);
     z-index: 0;
   }
-  .home-content {
+  .hero-content {
     position: relative;
     display: table-cell;
     vertical-align: middle;

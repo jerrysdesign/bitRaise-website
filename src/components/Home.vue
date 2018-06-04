@@ -12,7 +12,7 @@
       //-   span
       //-   span
     .wrapper
-      Home
+      Hero
       About
       Services
       Contact
@@ -20,14 +20,14 @@
 </template>
 
 <script>
-import Home from '@/components/BlockHero'
+import Hero from '@/components/BlockHero'
 import About from '@/components/BlockAbout'
 import Services from '@/components/BlockServices'
 import Contact from '@/components/BlockContact'
 import SectionFooter from '@/components/BlockFooter'
 export default {
   name: 'App',
-  components: {Home, About, Services, Contact, SectionFooter}
+  components: {Hero, About, Services, Contact, SectionFooter}
 }
 </script>
 
