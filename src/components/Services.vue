@@ -8,10 +8,10 @@
         //- .single-page-counter
     .single-page-content-wrap
       .single-page-content
-        section.services-page.top_90
+        section.services-page
           header
             .text-center
-              h1.page-title.bottom_45.top_120 All Services
+              h1.page-title.bottom_45 All Services
               h4.page-caption 提供 ICO 的套裝服務、企業級區塊鏈、咨詢及教育
           .container
             .ico-service
@@ -118,9 +118,72 @@ $white: #fff;
 $color_sunglo_approx: #ff6600;
 $color_black_pearl_approx: #000829;
 $color_deep_cove_approx: #040f3e;
+$navigation_height_xl: 104px;
+$navigation_height_sm: 84px;
 header {
   padding-bottom: 50px;
-
+}
+.single-page {
+  background: $color_black_pearl_approx;
+  text-align: center;
+  padding-top: $navigation_height_xl;
+  @media (max-width: 768px) {
+    padding-top: $navigation_height_sm;
+  }
+  &-navigation {
+    background: $color_deep_cove_approx;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    &-wrap {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 10;
+      background-color: #3d4750;
+      height: $navigation_height_xl;
+      @media (max-width: 768px) {
+        height: $navigation_height_sm;
+      }
+    }
+  }
+  &-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    vertical-align: top;
+    width: 94%;
+    &-wrap {
+    }
+  }
+  &-close {
+    background-image: url(../assets/img/icon-close.svg);
+    line-height: 44px;
+    height: 44px;
+    width: 44px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    cursor: pointer;
+    outline: 0;
+    &:after {
+      font-size: 30px;
+    }
+  }
+  &-next {
+    background-image: none;
+    line-height: 40px;
+  }
+  &-prev {
+    background-image: none;
+    line-height: 40px;
+  }
 }
 .services-page {
   .page-title {
@@ -150,23 +213,24 @@ header {
     line-height: 30px;
   }
   .ico-service {
-    padding: 60px 0;
+    padding: 60px 0 40px;
   }
   .ico-service {
     &-title {
       font-size: 32px;
       line-height: 50px;
       font-weight: 900;
-      color: $white;
+      color: #f3f5fa;
       margin-bottom: 30px;
       letter-spacing: 1px;
     }
     &-subtitle {
       letter-spacing: 1px;
-      color: #B4BFD9;
+      color: #f3f5fa;
       text-align: center;
     }
-    border-top: 1px solid rgba(#B4BFD9, .3);
+    border-top: 1px solid rgba(#B4BFD9, .15);
+    border-bottom: 1px solid rgba(#000, .85);
     & + .ico-service {
     }
   }
@@ -175,7 +239,6 @@ header {
     margin-right: auto;
     margin-left: auto;
   }
-
   .information {
     margin: 0 auto;
     float: none;
@@ -200,6 +263,7 @@ header {
 .card {
   background: transparent;
   padding: 0 20px;
+  margin-bottom: 30px;
   p {
     color: rgba(#B4BFD9, .85);
     font-weight: 400;
@@ -222,99 +286,5 @@ header {
 }
 .icon-service-item-c {
   background-image: url(../assets/img/services-item-c.svg);
-}
-.single-page {
-  padding: 0;
-  background: $color_black_pearl_approx;
-  transition: transform .3s ease-in-out;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: 99990;
-  // transform: none;
-  &:before {
-    box-sizing: border-box;
-    content: "";
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-  }
-  &:after {
-    display: block;
-    clear: both;
-    content: "";
-  }
-  .single-page-navigation-wrap {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    background-color: #3d4750;
-    height: 104px;
-    @media (max-width: 768px) {
-      height: 84px;
-    }
-  }
-  .single-page-navigation {
-    background: #040f3e;
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  .single-page-content-wrap {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    overflow-y: scroll;
-  }
-  .single-page-content {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 90px;
-    max-width: 1024px;
-    vertical-align: top;
-    width: 94%;
-    position: relative;
-    z-index: 1;
-  }
-  .single-page-close {
-    background-image: url(../assets/img/icon-close.svg);
-    line-height: 44px;
-    height: 44px;
-    width: 44px;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 0;
-    position: absolute;
-    cursor: pointer;
-    outline: 0;
-    &:after {
-      font-size: 30px;
-    }
-  }
-  .single-page-next {
-    background-image: none;
-    line-height: 40px;
-  }
-  .single-page-prev {
-    background-image: none;
-    line-height: 40px;
-  }
-}
-.portfolio-images img {
-  width: 100%;
-  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-  border-radius: 4px;
 }
 </style>
