@@ -1,10 +1,11 @@
 <template lang="pug">
   // HOME SECTION
   section#home
-    .home
+    .home(:style='opacitySet')
       #block(style='width: 100%; height: 100%; position: absolute;')
       .home-content
-        .cont(v-scroll-reveal.reset={ delay: 250 })
+        .cont
+          //(v-scroll-reveal.reset={ delay: 250 })
           h1.promo-text.text-center
             span.element {{ msg }}
             br
@@ -12,11 +13,39 @@
 </template>
 
 <script>
+import $ from 'jQuery';
+
 export default {
   name: 'Home',
   data () {
     return {
-      msg: 'Welcome to bitRaise'
+      msg: 'Welcome to bitRaise',
+      appHeight: 0,
+      currentScroll: 0,
+      opacitySet: 'opacity: 100',
+    }
+  },
+  mounted(){
+    window.addEventListener('scroll', this.getScrollTop, true)
+    this.setDefault()
+    $( window ).resize(this.setDefault)
+  },
+  methods: {
+    setDefault() {
+      this.appHeight = document.getElementsByClassName("home")[0].clientHeight
+      this.getScrollTop()
+      this.setOpacitySet()
+    },
+    getScrollTop() {
+      this.currentScroll = document.documentElement.scrollTop
+    },
+    setOpacitySet(){
+      this.opacitySet = `opacity: ${100 - this.currentScroll/(this.appHeight / 100)}`
+    }
+  },
+  watch: {
+    currentScroll(){
+      this.setOpacitySet()
     }
   }
 }
