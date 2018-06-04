@@ -1,10 +1,10 @@
 <template lang="pug">
   // HOME SECTION
   section#hero
-    .hero(:style="{ 'opacity': opacitySet }")
+    .hero(:style="{ opacity: opacitySet }")
       #block(style='width: 100%; height: 100%; position: absolute;')
       .hero-content
-        .cont
+        .cont(:style="{transform: 'scale('+ opacitySet +')'}")
           h1.promo-text.text-center
             span.element {{ msg }}
             br
@@ -21,7 +21,7 @@ export default {
       msg: 'Welcome to bitRaise',
       appHeight: 0,
       currentScroll: 0,
-      opacitySet: '1',
+      opacitySet: 1
     }
   },
   mounted(){

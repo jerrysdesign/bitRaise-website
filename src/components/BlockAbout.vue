@@ -47,11 +47,8 @@ $font_0: Font Awesome 5 Free;
 $url_0: url(../assets/img/home-bg.jpg);
 
 .about {
-  padding: 120px 0 80px;
+  padding: 0 0 80px;
   position: relative;
-  @media (max-width: 768px) {
-    padding: 40px 0 80px;
-  }
 }
 .titlebar {
   padding: 94px 0;
