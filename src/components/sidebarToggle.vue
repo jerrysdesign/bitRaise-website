@@ -32,6 +32,9 @@ export default {
     padding: 0;
     cursor: pointer;
     z-index: 101;
+    @media (max-width: 768px) {
+      top: 2.2rem;
+    }
   }
   .navToggle {
     width: 30px;
@@ -67,6 +70,11 @@ export default {
       span:nth-child(3){
         width: 100%;
       }
+    }
+  }
+  .active {
+    span:nth-child(3){
+      width: 100%;
     }
   }
 </style>

@@ -4,16 +4,16 @@
       nav
         ul
           li
-            a(href='#')
-              | Home
+            router-link(to='/services')
+              | Services
           li
             a(href='#')
-              | Project
+              | Project[待]
           li
-            a(href='#')
+            router-link(to='/team')
               | Team
           li
-            a(href='#')
+            router-link(to='/partners')
               | Partners
 </template>
 

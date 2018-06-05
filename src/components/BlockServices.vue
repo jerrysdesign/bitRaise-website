@@ -29,27 +29,31 @@
           i.icon-services--05
           h3.title.top_15 Business Image Developement
       .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 300 })
-        router-link(to='/services')
+        router-link(to='/services/ico-marketing')
           i.icon-services--06
           h3.title.top_15 ICO Marketing
+          .more Descovy
       .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 200 })
         router-link(to='/services')
           i.icon-services--07
           h3.title.top_15 Additional Services
       .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 250 })
-        router-link(to='/services')
+        router-link(to='/services/ico-legal')
           i.icon-services--08
           h3.title.top_15 ICO Legal
+          .more Descovy
       .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 300 })
-        router-link(to='/services')
+        router-link(to='/services/ico-financial')
           i.icon-services--09
           h3.title.top_15 ICO Financial
+          .more Descovy
       .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 200 })
-        router-link(to='/services')
+        router-link(to='/services/post-ico-services')
           i.icon-services--10
           h3.title.top_15 Post ICO Services
+          .more Descovy
       .w-100.service.text-center(v-scroll-reveal.reset={ delay: 250 })
-        router-link.site-btn(to='/services') See more
+        router-link.site-btn(to='/services') See All Services
 </template>
 
 <script>
@@ -99,7 +103,19 @@ $url_0: url(../assets/img/home-bg.jpg);
     background-color: $black_70;
   }
   .service {
-    // padding: 0 68px;
+    background-color: rgba(#172133, 0);
+    transition: all .2s;
+    padding: 15px 10px;
+    border: 1px solid rgba(#fff, 0);
+    &:hover {
+      background-color: rgba(#172133, .8);
+      border: 1px solid rgba(#fff, .8);
+      .more {
+        color: #172133;
+        background: #FFF;
+        transition: all ease 0.3s;
+      }
+    }
     i {
       color: $color_sunglo_approx;
       font-size: 40px;
@@ -109,17 +125,27 @@ $url_0: url(../assets/img/home-bg.jpg);
       color: $white;
       font-size: 14px;
     }
+    .more {
+      color: #fff;
+      border: 1px solid #fff;
+      display: inline-block;
+      padding:5px 20px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all ease 0.3s;
+      width: auro;
+    }
     p {
       line-height: 24px;
       color: #ffffff63;
       margin-bottom: 0;
     }
     @media (max-width: 1024px){
-      // padding: 0 30px;
     }
     @media (max-width: 481px) {
       margin-bottom: 45px;
-      padding: 0;
     }
     &:last-child {
       margin-bottom: 0;
