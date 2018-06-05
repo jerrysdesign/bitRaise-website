@@ -7,16 +7,14 @@
     // HEADER
     header
       img(src='@/assets/img/logo.svg', alt='logo')
-      //- .nav-icon
-      //-   span
-      //-   span
-      //-   span
     .wrapper
       Hero
       About
       Services
       Contact
     SectionFooter
+    sidebar-toggle
+    sidebar
 </template>
 
 <script>
@@ -25,9 +23,12 @@ import About from '@/components/BlockAbout'
 import Services from '@/components/BlockServices'
 import Contact from '@/components/BlockContact'
 import SectionFooter from '@/components/BlockFooter'
+import Sidebar from '@/components/sidebar.vue'
+import SidebarToggle from '@/components/sidebarToggle.vue'
+
 export default {
   name: 'App',
-  components: {Hero, About, Services, Contact, SectionFooter}
+  components: {Hero, About, Services, Contact, SectionFooter, Sidebar, SidebarToggle}
 }
 </script>
 
@@ -82,7 +83,6 @@ export default {
 // Header Section
 header{
   position: fixed;
-  z-index: 3;
   padding: 30px;
   top: 0;
   width: 100%;
@@ -92,41 +92,5 @@ header{
     background: #000829;
   }
 }
-.nav-icon {
-  float: right;
-  width: 30px;
-  height: 18px;
-  position: relative;
-  transform: rotate(0deg);
-  transition: .5s ease-in-out;
-  cursor: pointer;
-  span {
-    display: block;
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background: #fff;
-    opacity: 1;
-    transition: .25s ease-in-out;
-    &:nth-child(1) {
-      top: 0px;
-      transform-origin: left center;
-    }
-    &:nth-child(2) {
-      top: 7px;
-      transform-origin: left center;
-    }
-    &:nth-child(3) {
-      top: 14px;
-      transform-origin: left center;
-      width: 60%;
-      right: 0 !important;
-    }
-  }
-  &:hover {
-    span:nth-child(3){
-      width: 100%;
-    }
-  }
-}
+
 </style>
