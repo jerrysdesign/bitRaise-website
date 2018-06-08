@@ -5,10 +5,10 @@
         ul
           li
             router-link(to='/services')
-              | Services
+              | All Services
           li
             a(href='#')
-              | Project[待]
+              | Project [待...]
           li
             router-link(to='/team')
               | Team
@@ -45,7 +45,7 @@ export default {
 
 <style lang="scss" module>
   $white: #fff;
-  $color_black_pearl_approx: #000829;
+  $color_black_pearl_approx: #001847;
   $white_45: rgba(255, 255, 255, .45);
   .sidebar {
     position: fixed;
@@ -74,12 +74,18 @@ export default {
             width: 100%;
             display: block;
             line-height: 45px;
+            padding: 10px 20px;
             &:hover {
-              color: $color_black_pearl_approx;
-              transition: color ease 0.3s;
+              color: rgba($color_black_pearl_approx, .75);
+              transition: color ease .5s;
             }
             &.active {
-              color: $white_45;
+              color: $color_black_pearl_approx;
+            }
+          }
+          & + li {
+            a {
+              border-top: 1px solid rgba(white, .25);
             }
           }
         }
@@ -87,9 +93,7 @@ export default {
     }
   }
   .rightInner {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
+    width: 100%;
   }
 
 </style>

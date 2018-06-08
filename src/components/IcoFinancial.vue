@@ -12,7 +12,7 @@
           header
             .text-center
               h1.page-title.bottom_45 ICO Financial
-              h4.page-caption 我们的内部财务分析师为您提供战略支持，并对您的运营做出报告和审计
+              h4.page-caption 我們的內部財務分析師為您提供戰略支持，並對您的運營做出報告和審計
           .container
             .ico-service
               //- .row.justify-content-md-center
@@ -23,18 +23,18 @@
               //-     p.ico-service-subtitle bitRaise 有一個專家組成的全球的行銷、內容創作和網頁開發團隊，能幫助客戶取得ICO的最大收益。我們可以開展全範圍的ICO行銷方案的合作，也可以針對客戶的指定目標、在有限預算與時限情況下，提供的單項服務。我們依據服務的效果而收費，ICO的成功與否直接與我們的報酬相關。
               //-     p.ico-service-subtitle.bottom_60 我們點對點行銷服務還可以分解為下列模組：
               .row.justify-content-md-center
-                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 250 })
-                  h5 建档与运作服务
-                  p 您是否难以确定您的代币初始值？要解决此难题，您可以进行建档与运作操作。凭借我们广泛的高净值投资者网络，我们可以帮助您分析您的ICO值、制定代币策略，并建立一个场外档案，以帮助您的ICO投资者建立信心。
-                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 250 })
-                  h5 ICO 契保服务
-                  p “我们提供完整的第三方契保服务，以确保获得投资者的信任。在您的计划目标完成之前，资金可以暂交第三方保管。随着计划的陆续完成以及资金分配到位，投资者将知晓整个流程的走势，因而使他们更加信任平台，并促进平台的综合发展。 “
-                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 250 })
-                  h5 Multi-Sig电子钱包管理
-                  p 我们帮助您创建合适的协议确保您的比特币或以太币或其他加密货币的存储安全。同时，还可以为您提供能验证交易、需要多少验证者以及提交请求协议的各方名单。所有这些步骤为您的资金设置了多层保护，同时您还可以控制访问和支出。
-                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 250 })
-                  h5 财务报告与审计
-                  p 依照法规规定，及为了赢得投资者的信任，在ICO前、中、后期，您需要提供认真详细的财务报告。为了让您专注于核心业务，我们的会计师和财务分析师团队可以为您提供全面的服务。此外，为了提高您财务的准确性，我们还提供审计服务。
+                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 150 })
+                  h5 建檔與運作服務
+                  p 您是否難以確定您的代幣初始值？要解決此難題，您可以進行建檔與運作操作。憑借我們廣泛的高淨值投資者網絡，我們可以幫助您分析您的ICO值、制定代幣策略，並建立一個場外檔案，以幫助您的ICO投資者建立信心。
+                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 150 })
+                  h5 ICO 契保服務
+                  p 「我們提供完整的第三方契保服務，以確保獲得投資者的信任。在您的計劃目標完成之前，資金可以暫交第三方保管。隨著計劃的陸續完成以及資金分配到位，投資者將知曉整個流程的走勢，因而使他們更加信任平台，並促進平台的綜合發展。 「
+                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 150 })
+                  h5 Multi-Sig電子錢包管理
+                  p 我們幫助您創建合適的協議確保您的比特幣或以太幣或其他加密貨幣的存儲安全。同時，還可以為您提供能驗證交易、需要多少驗證者以及提交請求協議的各方名單。所有這些步驟為您的資金設置了多層保護，同時您還可以控制訪問和支出。
+                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 150 })
+                  h5 財務報告與審計
+                  p 依照法規規定，及為了贏得投資者的信任，在ICO前、中、後期，您需要提供認真詳細的財務報告。為了讓您專注於核心業務，我們的會計師和財務分析師團隊可以為您提供全面的服務。此外，為了提高您財務的準確性，我們還提供審計服務。
 
             .row.justify-content-md-center
               router-link.site-btn.top_45.bottom_45(to='/home') Back Home

@@ -41,7 +41,7 @@ export default {
 .site-line {
   &--top {
     @extend %site-line-stye;
-    width: 100%;
+    width: 100vw;
     height: 12px;
     top: 0;
     @media (max-width: 481px) {
@@ -51,7 +51,7 @@ export default {
   &--right {
     @extend %site-line-stye;
     width: 12px;
-    height: 100%;
+    height: 100vh;
     right: 0;
     top:0;
     @media (max-width: 481px) {
@@ -60,7 +60,7 @@ export default {
   }
   &--bottom {
     @extend %site-line-stye;
-    width: 100%;
+    width: 100vw;
     height: 12px;
     bottom:0;
     @media (max-width: 481px) {
@@ -71,7 +71,7 @@ export default {
   &--left {
     @extend %site-line-stye;
     width: 12px;
-    height: 100%;
+    height: 100vh;
     left: 0;
     top:0;
     @media (max-width: 481px) {
@@ -85,7 +85,7 @@ header{
   position: fixed;
   padding: 30px;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 11;
   transition: all ease 0.3s 1.0s;
   @media (max-width: 768px) {

@@ -11,7 +11,7 @@
         section.services-page
           header
             .text-center
-              h1.page-title.bottom_45 ICO Marketing
+              h1.page-title ICO Marketing
               h4.page-caption 我們曾經為包括初創企業在內的多家企業提供服務多年，有著良好的業績與信用。我們團隊成員能夠為企業客戶的ICO市場行銷提供全面專業的服務。
           .container
             .ico-service
@@ -23,28 +23,28 @@
                   p.ico-service-subtitle bitRaise 有一個專家組成的全球的行銷、內容創作和網頁開發團隊，能幫助客戶取得ICO的最大收益。我們可以開展全範圍的ICO行銷方案的合作，也可以針對客戶的指定目標、在有限預算與時限情況下，提供的單項服務。我們依據服務的效果而收費，ICO的成功與否直接與我們的報酬相關。
                   p.ico-service-subtitle.bottom_60 我們點對點行銷服務還可以分解為下列模組：
               .row.justify-content-md-center
-                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 250 })
+                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 150 })
                   h5 產品驗證分析
                   p 您是否擁有好的創意卻不確定是否有市場？而且不知道如何在區塊鏈上應用？不要緊，我們有經驗豐富的專家團隊為您分析真實的應用程序。我們可以幫助您瞭解市場，並找准產品定位，確保您的成功。
-                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 250 })
+                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 150 })
                   h5 路線圖和行銷策略
                   p 創意的實施其實是挺艱難複雜的。我們的團隊可以幫助您制定詳細的計劃，為您創意提供適當的時機。此外，我們根據創意制定可靠的行銷策略，能幫助您最大限度地利用資源。
-                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 250 })
+                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 150 })
                   h5 品牌、網絡與社交媒體的專業知識
                   p 我們國內有許多能提供高效策略的團隊，來幫助客戶創建品牌與意識，讓客戶的在眾多競爭對手中脫穎而出。我們有非常可靠的付費的社交媒體通道，在Reddut、Steemit、Bitcointalk等平台上也極具影響力。
-                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 250 })
+                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 150 })
                   h5 新聞媒體中的特殊版位
                   p 「我們生活在一個網絡時代，因此獲得關注度是關鍵因素。大部分人對ICO和新區塊鏈應用的瞭解都來自於新聞媒體，但是要使貴司名稱持續出現在優質媒體中還是很有挑戰的。我們的新聞網絡使貴公司置於特殊版位，以便贏得目標受眾的最大關注。
-                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 250 })
+                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 150 })
                   h5 口碑管理
                   p 我們的SEO平台與技術、內容創作團隊和法律團隊,能夠保證客戶的口碑和形象。我們能快速偵測負面內容，並做出應對，在實質性損失出現前消除危機。
-                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 250 })
+                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 150 })
                   h5 ICO 數位行銷
                   p 「我們能夠為您的新產品的不同階段開發並策劃各種ICO策略，包括創意篩選、概念開發、市場測試和ICO發佈。我們的數位行銷服務天衣無縫，能夠讓客戶的信息充分擴散到各投資網絡社區。
-                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 250 })
+                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 150 })
                   h5 社區管理
                   p 活躍的網絡社區是融資項目的重要根基。要做到很好的用戶服務與贏得網絡社區的信任，需要運用布告板、社交平台通道 、電報（Telegram）與其它必要的媒體。bitRaise 能夠為客戶提供高效的資源保證客戶信息的可見性，和在投資社區內的活躍度。
-                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 250 })
+                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 150 })
                   h5 公共關係
                   p 公共關係是行銷的一部分。bitRaise 區塊鏈行業已經有著近10年的經驗，與各分布式體系都著廣泛的關係網絡。我們能夠為客戶指派專業的公關專家，處理各平台上的問題。
             .row.justify-content-md-center
@@ -79,6 +79,9 @@ $navigation_height_xl: 104px;
 $navigation_height_sm: 84px;
 header {
   padding-bottom: 50px;
+  background-image: url(../assets/img/services-marketing-banner.png);
+  background-size: cover;
+  background-position: center center;
 }
 .single-page {
   background: $color_black_pearl_approx;
@@ -147,20 +150,29 @@ header {
     font-size: 60px;
     line-height: 65px;
     font-weight: 900;
-    color: #ff6600;
     padding-top: 120px;
     color: white;
+    background-color: rgba(#000829, .5);
+    margin-bottom: 40px;
+    text-shadow: 0 0 20px rgba(#000829, .9);
     @media (max-width: 768px) {
       padding-top: 60px;
+      font-size: 48px;
+      background-color: rgba(#000829, .8);
     }
   }
   .page-caption {
     font-size: 36px;
     line-height: 40px;
     font-weight: 700;
-    color: #ff6600;
     color: white;
-
+    background-color: rgba(#000829, .5);
+    text-shadow: 0 0 20px rgba(#000829, .9);
+    padding: 10px;
+    @media (max-width: 768px) {
+      font-size: 28px;
+      background-color: rgba(#000829, .8);
+    }
   }
   h5 {
     color: #FF6600;
@@ -187,7 +199,6 @@ header {
       text-align: center;
     }
     border-top: 1px solid rgba(#B4BFD9, .15);
-    border-bottom: 1px solid rgba(#000, .85);
     & + .ico-service {
     }
   }

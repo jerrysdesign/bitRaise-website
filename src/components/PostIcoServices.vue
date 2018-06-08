@@ -23,16 +23,16 @@
               //-     p.ico-service-subtitle bitRaise 有一個專家組成的全球的行銷、內容創作和網頁開發團隊，能幫助客戶取得ICO的最大收益。我們可以開展全範圍的ICO行銷方案的合作，也可以針對客戶的指定目標、在有限預算與時限情況下，提供的單項服務。我們依據服務的效果而收費，ICO的成功與否直接與我們的報酬相關。
               //-     p.ico-service-subtitle.bottom_60 我們點對點行銷服務還可以分解為下列模組：
               .row.justify-content-md-center
-                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 250 })
+                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 150 })
                   h5 財務報告
                   p 誠信是基本守則，這是我們建立這個團隊的准則。我們的金融團隊能夠幫助您創建、審計財務報表，並製作財務數據報表。ICO 完成後，維持客戶的信任對企業至關重要，我們的系統正好可以確保這一目標的達成。
-                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 250 })
+                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 150 })
                   h5 行銷和產品投放
                   p 您的代幣值與您的平台運營狀況有關。如果平台未能良好運行，代幣也同樣不會有任何好的表現。我們的團隊為您制定後 ICO 策略，並重點關注完整的運營效率，使您能夠專注於管理和控制方面。
-                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 250 })
+                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 150 })
                   h5 代幣控制
                   p 代幣是分散式平台的晴雨表。如果喪失對代幣的控制，則意味著您的平台存在風險。我們的代幣經理經驗豐富，能夠幫助控制您的代幣生態系統（無論是錢包管理、匯率更新和整合、交易量還是每日價格波動方面）。
-                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 250 })
+                .col-md-6.card.text-center(v-scroll-reveal.reset={ delay: 150 })
                   h5 長期業務發展
                   p 我們的目標是幫助您制定長期業務戰略，並幫助您的公司能夠長遠發展。我們能夠為您制定個性化的平台方案，包括法規遵從、業務規劃、營銷結構和業務增長等。
 

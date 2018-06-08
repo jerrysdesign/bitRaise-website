@@ -8,52 +8,42 @@
          br
          span
           | ICO services.
-      .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 200 })
-        router-link(to='/services')
-          i.icon-services--01
-          h3.title.top_15 ICO Concept building and Ideation
-      .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 250 })
-        router-link(to='/services')
-          i.icon-services--02
-          h3.title.top_15 ICO White Paper
-      .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 300 })
-        router-link(to='/services')
-          i.icon-services--03
-          h3.title.top_15 Token Developement
-      .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 200 })
-        router-link(to='/services')
-          i.icon-services--04
-          h3.title.top_15 ICO Website
-      .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 250 })
-        router-link(to='/services')
-          i.icon-services--05
-          h3.title.top_15 Business Image Developement
-      .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 300 })
-        router-link(to='/services/ico-marketing')
-          i.icon-services--06
-          h3.title.top_15 ICO Marketing
-          .more Descovy
-      .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 200 })
-        router-link(to='/services')
-          i.icon-services--07
-          h3.title.top_15 Additional Services
-      .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 250 })
-        router-link(to='/services/ico-legal')
-          i.icon-services--08
-          h3.title.top_15 ICO Legal
-          .more Descovy
-      .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 300 })
-        router-link(to='/services/ico-financial')
-          i.icon-services--09
-          h3.title.top_15 ICO Financial
-          .more Descovy
-      .col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 200 })
-        router-link(to='/services/post-ico-services')
-          i.icon-services--10
-          h3.title.top_15 Post ICO Services
-          .more Descovy
-      .w-100.service.text-center(v-scroll-reveal.reset={ delay: 250 })
-        router-link.site-btn(to='/services') See All Services
+      router-link.col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 200 }, to='/services')
+        i.icon-services--01
+        h3.title.top_15 ICO Concept building and Ideation
+      router-link.col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 250 }, to='/services')
+        i.icon-services--02
+        h3.title.top_15 ICO White Paper
+      router-link.col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 300 }, to='/services')
+        i.icon-services--03
+        h3.title.top_15 Token Developement
+      router-link.col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 200 }, to='/services')
+        i.icon-services--04
+        h3.title.top_15 ICO Website
+      router-link.col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 250 }, to='/services')
+        i.icon-services--05
+        h3.title.top_15 Business Image Developement
+      router-link.col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 300 }, to='/services/ico-marketing')
+        i.icon-services--06
+        h3.title.top_15 ICO Marketing
+        .more Descovy
+      router-link.col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 200 }, to='/services')
+        i.icon-services--07
+        h3.title.top_15 Additional Services
+      router-link.col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 250 }, to='/services/ico-legal')
+        i.icon-services--08
+        h3.title.top_15 ICO Legal
+        .more Descovy
+      router-link.col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 300 }, to='/services/ico-financial')
+        i.icon-services--09
+        h3.title.top_15 ICO Financial
+        .more Descovy
+      router-link.col-md-4.col-6.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 200 }, to='/services/post-ico-services')
+        i.icon-services--10
+        h3.title.top_15 Post ICO Services
+        .more Descovy
+      router-link.w-100.text-center(v-scroll-reveal.reset={ delay: 250 }, to='/services')
+        .site-btn See All Services
 </template>
 
 <script>
@@ -107,13 +97,15 @@ $url_0: url(../assets/img/home-bg.jpg);
     transition: all .2s;
     padding: 15px 10px;
     border: 1px solid rgba(#fff, 0);
+    transition: all ease .4s;
     &:hover {
-      background-color: rgba(#172133, .8);
+      background-color: rgba(#172133, .9);
       border: 1px solid rgba(#fff, .8);
       .more {
         color: #172133;
         background: #FFF;
         transition: all ease 0.3s;
+        padding:5px 30px;
       }
     }
     i {
