@@ -6,6 +6,8 @@
       .hero-content
         .cont(:style="{transform: 'scale('+ opacitySet +')'}")
           h1.promo-text.text-center
+            img.logo(src='@/assets/img/logo.svg', alt='logo')
+            br
             span.element {{ msg }}
             br
           a.site-btn.top_45(href='#about') Let&rsquo;s go!
@@ -18,7 +20,7 @@ export default {
   name: 'Hero',
   data () {
     return {
-      msg: 'Welcome to bitRaise',
+      msg: '專注於區塊鏈各項服務的領先者',
       appHeight: 0,
       currentScroll: 0,
       opacitySet: 1
@@ -84,6 +86,19 @@ export default {
     position: relative;
     display: table-cell;
     vertical-align: middle;
+    .logo {
+      width: 40%;
+      margin-bottom: 2rem;
+      @media (max-width: 1024px){
+        width: 50%;
+      }
+      @media (max-width: 768px) {
+        width: 60%;
+      }
+      @media (max-width: 481px) {
+        width: 90%;
+      }
+    }
     .site-btn {
       z-index: 6;
       position: relative;
@@ -100,6 +115,12 @@ export default {
       letter-spacing: -2px;
       position: relative;
       z-index: 4;
+      @media (max-width: 1024px){
+        font-size: 64px;
+      }
+      @media (max-width: 768px) {
+        font-size: 54px;
+      }
       .element {
         color: #ff6600;
       }
