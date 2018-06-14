@@ -13,6 +13,14 @@ import Partners from '@/components/Partners'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
+  scrollBehavior: function(to, from, savedPosition) {
+    if (to.hash) {
+      return {selector: to.hash}
+    } else {
+      return { x: 0, y: 0 }
+    }
+  },
   routes: [
     {
       path: '*',
@@ -25,6 +33,9 @@ export default new Router({
     {
       path: '/services',
       component: Services,
+      meta: {
+        scrollToTop: true
+      },
       children: [
         {
           path: '',
