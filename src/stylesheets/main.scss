@@ -61,6 +61,13 @@ ul {
     padding: 12px 60px;
     transition: all ease 0.3s;
   }
+  &.disabled {
+    cursor: default;
+    &:hover {
+      background: #ff6600;
+      padding:12px 50px;
+    }
+  }
 }
 
 // Margins
