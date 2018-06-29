@@ -10,17 +10,17 @@
     .wrapper
       Hero
       About
+      MainServices
       Services
       Contact
     SectionFooter
-    sidebar-toggle
-    sidebar
 </template>
 
 <script>
 import Hero from '@/components/BlockHero'
 import About from '@/components/BlockAbout'
 import Services from '@/components/BlockServices'
+import MainServices from '@/components/BlockMainServices'
 import Contact from '@/components/BlockContact'
 import SectionFooter from '@/components/BlockFooter'
 import Sidebar from '@/components/sidebar.vue'
@@ -28,7 +28,9 @@ import SidebarToggle from '@/components/sidebarToggle.vue'
 
 export default {
   name: 'App',
-  components: {Hero, About, Services, Contact, SectionFooter, Sidebar, SidebarToggle}
+  components: {
+    Hero, About, Services, MainServices, Contact, SectionFooter, Sidebar, SidebarToggle
+  }
 }
 </script>
 
@@ -81,7 +83,7 @@ export default {
 }
 
 // Header Section
-header{
+header {
   position: fixed;
   padding: 30px;
   top: 0;
@@ -92,5 +94,8 @@ header{
     background: #000829;
   }
 }
-
+.wrapper {
+  max-width: inherit;
+  padding: 0;
+}
 </style>

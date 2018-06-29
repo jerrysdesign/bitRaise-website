@@ -19,7 +19,7 @@
             .col-md-12
               // Message
               textarea#con_message.requie(name='con_message', placeholder='How can we help you?', rows='8', disabled)
-              button#con_submit.site-btn.top_45.text-center(type='submit', disabled) 即將開放
+              button#con_submit.site-btn.top_45.text-center.disabled(type='submit', disabled) Coming soon
 </template>
 
 <script>
