@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <g fill="none" fill-rule="evenodd" stroke="#F3F5FA" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M77 61L89 49 119 49C121.208 49 123 47.208 123 45L123 5C123 2.792 121.208 1 119 1L55 1C52.792 1 51 2.792 51 5L51 23M77 25L81 25M85 25L89 25M93 25L97 25M7 127L7 113C7 93 21 95 35 87M67 87C81 95 95 93 95 113L95 127"/>
+    <polygon points="59 95 51 91 43 95 35 87 39 81 51 83 63 81 67 87"/>
+    <path d="M61 73L61 81M41 81L41 73M49 109L53 109M49 101L53 101M69 47C69 34.85 63.15 29 51 29 38.85 29 33 34.85 33 47L33 55C35 69 41 73 41 73 45 75 51 75 51 75 51 75 57 75 61 73 61 73 67 69 69 55L69 47z"/>
+    <polyline points="33 47 41 43 51 47 61 51 69 47"/>
+    <path d="M23 127L23 115M79 127L79 115"/>
+  </g>
+</svg>

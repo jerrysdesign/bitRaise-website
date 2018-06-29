@@ -3,9 +3,9 @@
     .single-page-navigation-wrap
       .single-page-navigation
         router-link(to='/').single-page-close
-        //- .single-page-next
-        //- .single-page-prev
-        //- .single-page-counter
+        .single-page-next
+        .single-page-prev
+        .single-page-counter
     .single-page-content-wrap
       .single-page-content
         section.services-page
@@ -14,7 +14,7 @@
               h1.page-title.bottom_45 All Services
               h4.page-caption 提供 ICO 的套裝服務、企業級區塊鏈、咨詢及教育
           .container
-            .ico-service
+            #EndToEndICOSupport.ico-service
               .row.justify-content-md-center
                 .text-center.col-md-8(v-scroll-reveal.reset={ delay: 200 })
                   i.icon-service-item-a
@@ -58,7 +58,7 @@
                    strong 法律咨詢
                    | ，
                    strong ICO 後代幣管理解決方案及合規保護
-            .ico-service
+            #EnterpriseBlockchain.ico-service
               .row.justify-content-md-center
                 .text-center.col-md-8(v-scroll-reveal.reset={ delay: 200 })
                   i.icon-service-item-b
@@ -75,7 +75,7 @@
                 .col-md-4.card.text-center(v-scroll-reveal.reset={ delay: 300 })
                   h5 個性化區塊鏈解決方案
                   p 我們的目標是透過獨特的區塊鏈應用改善您在金融、房地產、供應鏈、資料庫管理等方面的業務。在不中斷運營的情況下，我們將區塊鏈技術無縫整合到您現行平台中。降低成本、提高效率並消除系統性錯誤和欺詐。
-            .ico-service
+            #ConsultingAndTraining.ico-service
               .row.justify-content-md-center
                 .text-center.col-md-8(v-scroll-reveal.reset={ delay: 200 })
                   i.icon-service-item-c
