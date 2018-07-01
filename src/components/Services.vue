@@ -2,7 +2,7 @@
 div
   transition(name='page', mode='out-in')
     router-view
-  ServicesList
+  //- ServicesList
 </template>
 
 <script>

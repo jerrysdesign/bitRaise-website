@@ -2,7 +2,7 @@
   .single-page
     .single-page-navigation-wrap
       .single-page-navigation
-        router-link(to='/services').single-page-close
+        router-link(to='/').single-page-close
         router-link(to='/services/ico-legal').single-page-next
         //- .single-page-prev
         //- .single-page-counter

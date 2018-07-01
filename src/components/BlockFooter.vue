@@ -21,6 +21,9 @@
           h4.title.bottom_15 Phone
           p
             | +886-919-990-188(顧問諮詢代表)
+          h4.title.bottom_15 E-Mail
+          p
+            | info@bitraise.co
       .copyright
         p.float-left Copyright 2018 All rights reserved.
         img.float-right(src='@/assets/img/logo-br.svg', alt='')

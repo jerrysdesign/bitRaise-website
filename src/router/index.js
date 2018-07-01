@@ -13,7 +13,7 @@ import Partners from '@/components/Partners'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  mode: 'hash',
   scrollBehavior: function(to, from, savedPosition) {
     if (to.hash) {
       return {selector: to.hash}
@@ -58,14 +58,6 @@ export default new Router({
           component: PosticoServices
         }
       ]
-    },
-    {
-      path: '/team',
-      component: Team
-    },
-    {
-      path: '/partners',
-      component: Partners
     }
   ]
 })

@@ -8,13 +8,13 @@
          br
          span
           | we can do?
-      .col-md-4.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 200 })
+      router-link.col-md-4.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 200 }, to='/services')
         i.icon-services--01
         h3.title End to End ICO Support
-      .col-md-4.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 250 })
+      router-link.col-md-4.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 250 }, to='/services')
         i.icon-services--02
         h3.title Enterprise Blockchain
-      .col-md-4.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 300 })
+      router-link.col-md-4.service.text-center.bottom_60(v-scroll-reveal.reset={ delay: 300 }, to='/services')
         i.icon-services--03
         h3.title Consulting and Training
 </template>

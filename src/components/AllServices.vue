@@ -94,6 +94,7 @@
 </template>
 
 <script>
+import ServicesList from '@/components/BlockServices'
 export default {
   name: 'Services',
   data () {
