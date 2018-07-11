@@ -32,14 +32,11 @@ export default {
   data () {
     return {
     }
-  },
-  mounted() {
   }
 }
 </script>
 
 <style lang="scss" scoped>
-// About
 //colors
 $black_75: rgba(0, 0, 0, 0.75);
 $white: #fff;

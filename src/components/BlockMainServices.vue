@@ -1,6 +1,6 @@
 <template lang="pug">
   // Service
-  section#services.services
+  section#mainservices.mainservices
     .cont.row
       .col-md-12.text-center
         h2.section-title.bottom_60(v-scroll-reveal.reset={ delay: 50 })
@@ -21,34 +21,31 @@
 
 <script>
 export default {
-  name: 'Services',
+  name: 'MainServices',
   data () {
     return {
     }
-  },
-  mounted() {
   }
 }
 </script>
 
 <style lang="scss" scoped>
-// About
 //colors
-$black_75: rgba(0, 0, 0, .75);
+$black_75: rgba(0, 0, 0, 0.75);
 $white: #fff;
 $color_sunglo_approx: #ff6600;
-$black_70: rgba(0, 0, 0, .7);
+$black_70: rgba(0, 0, 0, 0.70);
 
 //fonts
 $font_0: Font Awesome 5 Free;
 
 //urls
-$url_0: url(../assets/img/home-bg.jpg);
+// $url_0: url(../assets/img/home-bg.jpg);
 
-.services {
+.mainservices {
   position: relative;
   overflow: hidden;
-  background: $url_0 bottom center fixed;
+  // background: $url_0 top center fixed;
   padding: 100px 0;
   @media (max-width: 768px) {
     padding: 80px 0;
@@ -71,9 +68,15 @@ $url_0: url(../assets/img/home-bg.jpg);
     padding: 15px 10px;
     border: 1px solid rgba(#fff, 0);
     transition: all ease .4s;
+    &.disabled {
+      &:hover {
+        background-color: rgba(#172133, .0);
+        border: 1px solid rgba(#fff, 0);
+      }
+    }
     &:hover {
-      // background-color: rgba(#172133, .9);
-      // border: 1px solid rgba(#fff, .8);
+      background-color: rgba(#172133, .9);
+      border: 1px solid rgba(#fff, .8);
       .more {
         color: #172133;
         background: #FFF;
@@ -88,8 +91,7 @@ $url_0: url(../assets/img/home-bg.jpg);
     .title {
       font-weight: 500;
       color: $white;
-      font-size: 20px;
-      margin-top: 25px;
+      font-size: 14px;
     }
     .more {
       color: #fff;
@@ -114,7 +116,7 @@ $url_0: url(../assets/img/home-bg.jpg);
       margin-bottom: 45px;
     }
     &:last-child {
-      margin-bottom: 0;
+      // margin-bottom: 0;
     }
   }
 }

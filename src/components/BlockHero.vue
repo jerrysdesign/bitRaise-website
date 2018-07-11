@@ -2,7 +2,8 @@
   // HOME SECTION
   section#hero
     .hero(:style="{ opacity: opacitySet }")
-      #block(style='width: 100%; height: 100%; position: absolute;')
+      video#block(autoplay, muted, loop)
+        source(src='static/video/blockchain.mp4', type='video/mp4')
       .hero-content
         .cont(:style="{transform: 'scale('+ opacitySet +')'}")
           h1.promo-text.text-center
@@ -33,9 +34,6 @@ export default {
     var where =  window.pageYOffset || document.documentElement.scrollTop
   },
   methods: {
-    getTest(){
-      alert("gg")
-    },
     setDefault() {
       this.appHeight = document.getElementsByClassName('hero')[0].clientHeight
       this.getScrollTop()
@@ -63,7 +61,23 @@ export default {
   position: relative;
   height: 100vh;
 }
-
+#block {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 17, 74, 0.75);
+    z-index: 0;
+  }
+}
 .hero {
   display: table;
   width: 100%;
@@ -86,6 +100,7 @@ export default {
     position: relative;
     display: table-cell;
     vertical-align: middle;
+    z-index: 99;
     .logo {
       width: 40%;
       margin-bottom: 2rem;
